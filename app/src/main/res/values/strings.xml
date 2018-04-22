@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Create Character</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="Title">Character Select</string>
+    <string name="Title2">Character Settings</string>
+    <string name="paladin">Paladin</string>
+    <string name="mage">Mage</string>
+    <string name="warrior">Warrior</string>
+    <string name="healer">Healer</string>
+    <string name="hunter">Hunter</string>
+    <string name="character">[CHARACTER]</string>
+    <string name="points_left_to_spend">Points Left To Spend:\u0020</string>
+    <string name="_10">10</string>
+    <string name="strength">Strength:</string>
+    <string name="intellect">Intellect:</string>
+    <string name="wisdom">Wisdom:</string>
+    <string name="dexterity">Dexterity:</string>
+</resources>

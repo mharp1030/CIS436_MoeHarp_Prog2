@@ -1,0 +1,123 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.moeharp.cis436_moeharp_prog2.CharDataActivity">
+
+    <TextView
+        android:id="@+id/txtChar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/character"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="35dp"
+            android:layout_toStartOf="@+id/txtPointsLeft"
+            android:text="@string/points_left_to_spend"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtPointsLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:text="@string/_10"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtStrength"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginStart="8dp"
+            android:text="@string/strength"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RatingBar
+            android:id="@+id/ratStrgth"
+            style="@android:style/Widget.Holo.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView2"
+            android:layout_below="@+id/txtStrength"
+            android:numStars="4" />
+
+        <TextView
+            android:id="@+id/txtIntellect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txtStrength"
+            android:layout_below="@+id/ratStrgth"
+            android:text="@string/intellect"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RatingBar
+            android:id="@+id/ratIntel"
+            style="@android:style/Widget.Holo.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/ratStrgth"
+            android:layout_below="@+id/txtIntellect"
+            android:numStars="4" />
+
+        <TextView
+            android:id="@+id/txtWisdom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txtIntellect"
+            android:layout_below="@+id/ratIntel"
+            android:text="@string/wisdom"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RatingBar
+            android:id="@+id/ratWsdm"
+            style="@android:style/Widget.Holo.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/ratIntel"
+            android:layout_below="@+id/txtWisdom"
+            android:numStars="4" />
+
+        <TextView
+            android:id="@+id/txtDexterity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txtWisdom"
+            android:layout_below="@+id/ratWsdm"
+            android:text="@string/dexterity"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RatingBar
+            android:id="@+id/ratDex"
+            style="@android:style/Widget.Holo.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/ratWsdm"
+            android:layout_below="@+id/txtDexterity"
+            android:layout_toEndOf="@+id/txtDexterity"
+            android:numStars="4" />
+
+    </RelativeLayout>
+
+</FrameLayout>
